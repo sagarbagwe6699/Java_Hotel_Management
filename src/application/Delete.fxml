@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #CFD8DC;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DeleteController">
+   <children>
+      <Pane layoutX="274.0" layoutY="45.0" prefHeight="510.0" prefWidth="338.0" style="-fx-background-color: #FFFFFF;" styleClass="pane">
+         <effect>
+            <DropShadow color="#00000057" />
+         </effect>
+         <children>
+            <Text fill="#455a64" layoutX="27.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete Room">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Line endX="109.60003662109375" endY="-1.52587890625E-5" layoutX="210.0" layoutY="83.0" startX="-195.00003051757812" startY="-1.52587890625E-5" stroke="#bdbdbd" />
+            <JFXTextField fx:id="rn" labelFloat="true" layoutX="27.0" layoutY="124.0" prefHeight="25.0" prefWidth="135.0" promptText="Room Number" styleClass="inp" />
+            <JFXTextField fx:id="rt" disable="true" labelFloat="true" layoutX="27.0" layoutY="185.0" promptText="Room type" styleClass="inp" />
+            <JFXTextField fx:id="bt" disable="true" labelFloat="true" layoutX="27.0" layoutY="243.0" promptText="Bed Type" styleClass="inp" />
+            <JFXTextField fx:id="p" disable="true" labelFloat="true" layoutX="27.0" layoutY="304.0" promptText="Price" styleClass="inp" />
+            <JFXButton fx:id="del" buttonType="RAISED" defaultButton="true" layoutX="27.0" layoutY="422.0" onAction="#delete" prefHeight="40.0" prefWidth="135.0" ripplerFill="#9f3515" style="-fx-background-color: #FF5722;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="search" fitHeight="40.0" fitWidth="18.0" layoutX="144.0" layoutY="127.0" onMouseClicked="#search" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/search.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="DELELBL" layoutX="27.0" layoutY="386.0" textFill="#ff5722" />
+            <Label fx:id="INV" layoutX="27.0" layoutY="156.0" prefHeight="17.0" prefWidth="135.0" textFill="#ff5722" />
+         </children>
+      </Pane>
+      <ImageView fx:id="back" fitHeight="52.0" fitWidth="31.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#showMC" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/left-arrow.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

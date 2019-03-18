@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #CFD8DC;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ManageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#455a64" height="130.0" stroke="TRANSPARENT" strokeType="INSIDE" width="900.0">
+         <effect>
+            <DropShadow color="#0000009a" />
+         </effect>
+      </Rectangle>
+      <Circle fx:id="add" fill="#ff5722" layoutX="196.0" layoutY="323.0" onMouseClicked="#showNR" radius="76.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <effect>
+            <DropShadow color="#00000094" />
+         </effect>
+      </Circle>
+      <Circle fx:id="remove" fill="#ff5722" layoutX="661.0" layoutY="323.0" onMouseClicked="#showUR" radius="76.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <effect>
+            <DropShadow color="#00000094" />
+         </effect>
+      </Circle>
+      <Circle fx:id="update" fill="#ff5722" layoutX="429.0" layoutY="323.0" onMouseClicked="#showDR" radius="76.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <effect>
+            <DropShadow color="#00000094" />
+         </effect>
+      </Circle>
+      <ImageView fx:id="addi" fitHeight="67.0" fitWidth="63.0" layoutX="165.0" layoutY="292.0" onMouseClicked="#showNR" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/add.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="del" fitHeight="63.0" fitWidth="72.0" layoutX="398.0" layoutY="292.0" onMouseClicked="#showDR" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/rubbish-bin.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="54.0" layoutX="634.0" layoutY="296.0" onMouseClicked="#showUR" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/icon.png" />
+         </image>
+      </ImageView>
+      <Line endX="722.5999755859375" endY="-1.52587890625E-5" layoutX="126.0" layoutY="527.0" startX="-100.0" stroke="#757575" />
+      <Text fill="WHITE" layoutX="223.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Rooms">
+         <font>
+            <Font name="Roboto Light" size="40.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="130.0" fitWidth="97.0" layoutX="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/LOGO_WHITE.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="179.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add">
+         <font>
+            <Font name="Roboto Light" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="393.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove">
+         <font>
+            <Font name="Roboto Light" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="630.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update">
+         <font>
+            <Font name="Roboto Light" size="20.0" />
+         </font>
+      </Text>
+      <Line endX="23.0" endY="89.19999694824219" layoutX="129.0" layoutY="22.0" startX="23.0" startY="-6.800000190734863" stroke="WHITE" />
+   </children>
+</AnchorPane>

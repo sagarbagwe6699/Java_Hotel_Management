@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #CFD8DC;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CheckInController">
+   <children>
+      <Pane layoutX="55.0" layoutY="44.0" prefHeight="526.0" prefWidth="330.0" style="-fx-background-color: #FFFFFF;" styleClass="pane" stylesheets="@application.css">
+         <effect>
+            <DropShadow color="#0000002e" />
+         </effect>
+         <children>
+            <JFXTextField fx:id="fname" labelFloat="true" layoutX="28.0" layoutY="114.0" promptText="First name*" styleClass="inp" stylesheets="@application.css">
+               <font>
+                  <Font name="Roboto Light" size="12.0" />
+               </font>
+            </JFXTextField>
+            <Text layoutX="28.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer details">
+               <font>
+                  <Font name="Roboto Light" size="27.0" />
+               </font>
+            </Text>
+            <Line endX="178.4000244140625" endY="1.52587890625E-5" fill="#bdbdbd" layoutX="129.0" layoutY="88.0" startX="-108.79998779296875" startY="1.52587890625E-5" stroke="#bdbdbd" />
+            <JFXTextField fx:id="lname" labelFloat="true" layoutX="28.0" layoutY="169.0" promptText="Last name*" styleClass="inp" stylesheets="@application.css">
+               <font>
+                  <Font name="Roboto Light" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextArea fx:id="add" labelFloat="true" layoutX="27.0" layoutY="220.0" prefHeight="79.0" prefWidth="277.0" promptText="Address*" styleClass="inp" stylesheets="@application.css" />
+            <JFXTextField fx:id="phone" labelFloat="true" layoutX="28.0" layoutY="337.0" prefHeight="23.0" prefWidth="129.0" promptText="Phone number*" styleClass="inp" stylesheets="@application.css">
+               <font>
+                  <Font name="Roboto Light" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="city" labelFloat="true" layoutX="30.0" layoutY="386.0" promptText="City*" styleClass="inp" stylesheets="@application.css">
+               <font>
+                  <Font name="Roboto Light" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="addhar" labelFloat="true" layoutX="28.0" layoutY="428.0" prefHeight="23.0" prefWidth="201.0" promptText="Aadhar card number*" styleClass="inp" stylesheets="@application.css">
+               <font>
+                  <Font name="Roboto Light" size="12.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="27.0" layoutY="488.0" text="Fields with * are mandatory">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="413.0" layoutY="44.0" prefHeight="314.0" prefWidth="330.0" style="-fx-background-color: #FFFFFF;" styleClass="pane" stylesheets="@application.css">
+         <effect>
+            <DropShadow color="#0000002e" />
+         </effect>
+         <children>
+            <Text layoutX="29.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking details">
+               <font>
+                  <Font name="Roboto Light" size="27.0" />
+               </font>
+            </Text>
+            <Line endX="178.4000244140625" endY="1.52587890625E-5" fill="#bdbdbd" layoutX="130.0" layoutY="85.0" startX="-108.79998779296875" startY="1.52587890625E-5" stroke="#bdbdbd" />
+            <JFXTextField fx:id="rn" labelFloat="true" layoutX="29.0" layoutY="109.0" promptText="Room number*" styleClass="inp" stylesheets="@application.css">
+               <font>
+                  <Font name="Roboto Light" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="days" labelFloat="true" layoutX="29.0" layoutY="162.0" prefHeight="23.0" prefWidth="103.0" promptText="Number of days*" styleClass="inp" stylesheets="@application.css">
+               <font>
+                  <Font name="Roboto Light" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="cal" buttonType="RAISED" layoutX="29.0" layoutY="225.0" onAction="#save" prefHeight="32.0" prefWidth="103.0" ripplerFill="#ca4821" style="-fx-background-color: #FF5722;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light" size="16.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="error" layoutX="27.0" layoutY="277.0" prefHeight="17.0" prefWidth="277.0" textFill="RED" />
+            <Label fx:id="bs" layoutX="27.0" layoutY="268.0" prefHeight="17.0" prefWidth="277.0" textFill="#ff5722" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
